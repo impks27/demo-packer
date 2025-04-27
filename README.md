@@ -14,3 +14,12 @@ packer validate nginx-ami.pkr.hcl
 
 ### Build the AMI
 packer build nginx-ami.pkr.hcl
+
+### Quick Notes
+- source = where to build (AWS, Azure, Docker, etc).
+
+- provisioner = what scripts or tools to run inside the VM.
+
+- build = combines sources + provisioners.
+
+- HCL (.pkr.hcl) is the modern format (JSON works too but less nice).
